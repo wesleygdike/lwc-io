@@ -24,7 +24,7 @@ io.on('connection', (socket) => {
     socket.emit('status', {success, message});
   }
 
-  socket.on('clicked', () => console.log('Client clicked')
+  socket.on('clicked', () => console.log('Client clicked'))
   });
 
   socket.on('transmit', () => {
