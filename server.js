@@ -16,6 +16,7 @@ io.on('connection', (socket) => {
   console.log('Client connected Socket Id: ' + socket.id);
 
   socket.on('disconnect', () => console.log('Client disconnected'));
+  socket.on('clicked', () => console.log('Button clicked by client'));
 });
 
 setInterval(() => io.emit('time', new Date().toTimeString()), 1000);
